@@ -14,26 +14,26 @@ class Directory extends React.Component {
           imageUrl:
             "https://i.ibb.co/ynhW2HY/undraw-finish-line-katerina-limpitsouni-xy20.png",
           id: 1,
-          linkUrl: "cardio",
+          linkUrl: "shop",
         },
         {
           title: "Bike",
           imageUrl: "https://i.ibb.co/Lkm9btS/undraw-biking-kc4f.png",
           id: 2,
-          linkUrl: "bike",
+          linkUrl: "shop",
         },
         {
           title: "Stretch",
           imageUrl: "https://i.ibb.co/5v5NX14/undraw-pilates-gpdb.png",
           id: 3,
-          linkUrl: "yoga",
+          linkUrl: "shop",
         },
         {
           title: "Weights",
           imageUrl: "https://i.ibb.co/HYdgWY0/undraw-working-out-6psf.png",
           size: "large",
           id: 4,
-          linkUrl: "weights",
+          linkUrl: "shop",
         },
         {
           title: "shop",
