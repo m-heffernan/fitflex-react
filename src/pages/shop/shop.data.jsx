@@ -14,8 +14,8 @@ const SHOP_DATA = [
       {
         id: 2,
         name: "Bench Day",
-        videoId:
-          "https://stream.mux.com/GN460153qn00zwo9jBs8NgympEHqqkJXGot9vL1fPo3Bs.m3u8",
+        videoUrl:
+          "https://stream.mux.com/bNMkmcqOaR9n9Ce01V9jV00CXm6Akr61ltJ31btgJqYQQ.m3u8",
         price: 5,
       },
       {
