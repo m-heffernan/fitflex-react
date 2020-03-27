@@ -2,15 +2,13 @@
   width: 30%;
   display: flex;
   flex-direction: column;
-  height: 270px;
+  position: relative;
   align-items: center;
 
   .video {
-    width: 100%;
-    height: 95%;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .collection-footer {

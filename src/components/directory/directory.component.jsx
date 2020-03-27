@@ -10,7 +10,7 @@ class Directory extends React.Component {
     this.state = {
       sections: [
         {
-          title: "Cardio",
+          title: "Circuit",
           imageUrl:
             "https://i.ibb.co/ynhW2HY/undraw-finish-line-katerina-limpitsouni-xy20.png",
           id: 1,
@@ -29,7 +29,7 @@ class Directory extends React.Component {
           linkUrl: "shop",
         },
         {
-          title: "Weights",
+          title: "Cardio",
           imageUrl: "https://i.ibb.co/HYdgWY0/undraw-working-out-6psf.png",
           size: "large",
           id: 4,

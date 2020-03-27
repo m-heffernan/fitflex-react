@@ -1,20 +1,22 @@
 const SHOP_DATA = [
   {
     id: 1,
-    title: "Cardio",
-    routeName: "cardio",
+    title: "Circuit",
+    routeName: "circuit",
     items: [
       {
         id: 1,
-        name: "Brown Brim",
-        videoId: "fitflex/fitflex_test1",
-        price: 25,
+        name: "Push Pull",
+        videoUrl:
+          "https://stream.mux.com/9Gq5BoTkrEktIixfdLfc5FRW02RL6OaxikQa4zv2MDeo.m3u8",
+        price: 10,
       },
       {
         id: 2,
-        name: "Blue Beanie",
-        videoId: "fitflex/fitflex_test1",
-        price: 18,
+        name: "Bench Day",
+        videoId:
+          "https://stream.mux.com/GN460153qn00zwo9jBs8NgympEHqqkJXGot9vL1fPo3Bs.m3u8",
+        price: 5,
       },
       {
         id: 3,
@@ -154,8 +156,8 @@ const SHOP_DATA = [
   },
   {
     id: 4,
-    title: "Weights",
-    routeName: "weights",
+    title: "Cardio",
+    routeName: "cardio",
     items: [
       {
         id: 23,
