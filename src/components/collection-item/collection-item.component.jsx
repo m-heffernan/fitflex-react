@@ -13,7 +13,11 @@ const CollectionItem = ({ id, name, price, videoUrl }) => (
       width="100%"
       height="100%"
       config={{
+        dailymotion: {
+          preload: true,
+        },
         file: {
+          forceVideo: true,
           forceHLS: true,
         },
       }}
