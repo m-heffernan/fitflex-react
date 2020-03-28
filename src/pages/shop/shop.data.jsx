@@ -20,9 +20,10 @@ const SHOP_DATA = [
       },
       {
         id: 3,
-        name: "Brown Cowboy",
-        videoId: "fitflex/fitflex_test1",
-        price: 35,
+        name: "Friyay Legday",
+        videoUrl:
+          "https://stream.mux.com/tKYGo5WAkhQLqaE00LRPUZEe7bwDa1z01SmFKq4DSBlik.m3u8",
+        price: 5,
       },
       {
         id: 4,
