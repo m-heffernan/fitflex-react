@@ -70,7 +70,7 @@ const SHOP_DATA = [
     items: [
       {
         id: 10,
-        name: "10 Min Flex",
+        name: "5 Min Flex",
         videoUrl:
           "https://stream.mux.com/nHtBAdZKVxxDOLURKmhHcrZnriVenVUKeTgPK9wdHZE.m3u8",
         price: 8,
