@@ -4,6 +4,8 @@ import ReactPlayer from "react-player"
 
 import "./collection-item.styles.scss"
 
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+
 const CollectionItem = ({ id, name, price, videoUrl }) => (
   <div className="collection-item">
     <ReactPlayer
@@ -13,11 +15,8 @@ const CollectionItem = ({ id, name, price, videoUrl }) => (
       width="100%"
       height="100%"
       config={{
-        dailymotion: {
-          preload: true,
-        },
         file: {
-          forceHLS: /^((?!chrome|android).)*safari/i.test(navigator.userAgent),
+          forceHLS: !isSafari,
           forceVideo: true,
         },
       }}

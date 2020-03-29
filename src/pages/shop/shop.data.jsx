@@ -1,8 +1,8 @@
 const SHOP_DATA = [
   {
     id: 1,
-    title: "Circuit",
-    routeName: "circuit",
+    title: "Queens",
+    routeName: "queens",
     items: [
       {
         id: 1,
@@ -65,14 +65,15 @@ const SHOP_DATA = [
   },
   {
     id: 2,
-    title: "Bike",
-    routeName: "bike",
+    title: "Hoboken",
+    routeName: "hoboken",
     items: [
       {
         id: 10,
-        name: "Adidas NMD",
-        videoId: "fitflex/fitflex_test1",
-        price: 220,
+        name: "10 Min Flex",
+        videoUrl:
+          "https://stream.mux.com/nHtBAdZKVxxDOLURKmhHcrZnriVenVUKeTgPK9wdHZE.m3u8",
+        price: 8,
       },
       {
         id: 11,
