@@ -1,31 +1,35 @@
 const SHOP_DATA = [
   {
     id: 1,
-    title: "Hats",
-    routeName: "hats",
+    title: "Circuit",
+    routeName: "circuit",
     items: [
       {
         id: 1,
-        name: "Brown Brim",
-        imageUrl: "https://i.ibb.co/ZYW3VTp/brown-brim.png",
+        name: "Push Pull",
+        imageUrl:
+          "https://image.mux.com/9Gq5BoTkrEktIixfdLfc5FRW02RL6OaxikQa4zv2MDeo/thumbnail.png?width=178&height=120&fit_mode=pad&time=1",
         price: 25,
       },
       {
         id: 2,
-        name: "Blue Beanie",
-        imageUrl: "https://i.ibb.co/ypkgK0X/blue-beanie.png",
+        name: "Bench Day",
+        imageUrl:
+          "https://image.mux.com/bNMkmcqOaR9n9Ce01V9jV00CXm6Akr61ltJ31btgJqYQQ/thumbnail.png?width=314&height=176&fit_mode=pad&time=16",
         price: 18,
       },
       {
         id: 3,
-        name: "Brown Cowboy",
-        imageUrl: "https://i.ibb.co/QdJwgmp/brown-cowboy.png",
+        name: "Friyay Legday",
+        imageUrl:
+          "https://image.mux.com/tKYGo5WAkhQLqaE00LRPUZEe7bwDa1z01SmFKq4DSBlik/thumbnail.png?width=214&height=121&fit_mode=pad&time=9",
         price: 35,
       },
       {
         id: 4,
-        name: "Grey Brim",
-        imageUrl: "https://i.ibb.co/RjBLWxB/grey-brim.png",
+        name: "Flex Depot",
+        imageUrl:
+          "https://image.mux.com/nHtBAdZKVxxDOLURKmhHcrZnriVenVUKeTgPK9wdHZE/thumbnail.png?width=190&height=350&fit_mode=pad&time=17",
         price: 25,
       },
       {
@@ -62,8 +66,8 @@ const SHOP_DATA = [
   },
   {
     id: 2,
-    title: "Sneakers",
-    routeName: "sneakers",
+    title: "Bike",
+    routeName: "bike",
     items: [
       {
         id: 10,
@@ -117,8 +121,8 @@ const SHOP_DATA = [
   },
   {
     id: 3,
-    title: "Jackets",
-    routeName: "jackets",
+    title: "Stretch",
+    routeName: "stretch",
     items: [
       {
         id: 18,
@@ -154,8 +158,8 @@ const SHOP_DATA = [
   },
   {
     id: 4,
-    title: "Womens",
-    routeName: "womens",
+    title: "Cardio",
+    routeName: "cardio",
     items: [
       {
         id: 23,
@@ -203,8 +207,8 @@ const SHOP_DATA = [
   },
   {
     id: 5,
-    title: "Mens",
-    routeName: "mens",
+    title: "Shop",
+    routeName: "shop",
     items: [
       {
         id: 30,
