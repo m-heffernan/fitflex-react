@@ -1,60 +1,23 @@
 import React from "react"
+import { connect } from "react-redux"
+import { createStructuredSelector } from "reselect"
+
+import { selectDirectorySections } from "../../redux/directory/directory.selectors"
+
 import MenuItem from "../menu-item/menu-item.component"
 
 import "./directory.styles.scss"
 
-class Directory extends React.Component {
-  constructor() {
-    super()
+const Directory = ({ sections }) => (
+  <div className="directory-menu">
+    {sections.map(({ id, ...otherSectionProps }) => (
+      <MenuItem key={id} {...otherSectionProps} />
+    ))}
+  </div>
+)
 
-    this.state = {
-      sections: [
-        {
-          title: "Circuit",
-          imageUrl:
-            "https://i.ibb.co/ynhW2HY/undraw-finish-line-katerina-limpitsouni-xy20.png",
-          id: 1,
-          linkUrl: "shop",
-        },
-        {
-          title: "Bike",
-          imageUrl: "https://i.ibb.co/Lkm9btS/undraw-biking-kc4f.png",
-          id: 2,
-          linkUrl: "shop",
-        },
-        {
-          title: "Stretch",
-          imageUrl: "https://i.ibb.co/5v5NX14/undraw-pilates-gpdb.png",
-          id: 3,
-          linkUrl: "shop",
-        },
-        {
-          title: "Cardio",
-          imageUrl: "https://i.ibb.co/HYdgWY0/undraw-working-out-6psf.png",
-          size: "large",
-          id: 4,
-          linkUrl: "shop",
-        },
-        {
-          title: "shop",
-          imageUrl: "https://i.ibb.co/1Zw0g9z/undraw-add-to-cart-vkjp.png",
-          size: "large",
-          id: 5,
-          linkUrl: "shop",
-        },
-      ],
-    }
-  }
+const mapStateToProps = createStructuredSelector({
+  sections: selectDirectorySections,
+})
 
-  render() {
-    return (
-      <div className="directory-menu">
-        {this.state.sections.map(({ id, ...otherSectionProps }) => (
-          <MenuItem key={id} {...otherSectionProps} />
-        ))}
-      </div>
-    )
-  }
-}
-
-export default Directory
+export default connect(mapStateToProps)(Directory)
