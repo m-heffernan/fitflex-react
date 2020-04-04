@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-  {
+const SHOP_DATA = {
+  circuit: {
     id: 1,
     title: "Circuit",
     routeName: "circuit",
@@ -64,7 +64,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  bike: {
     id: 2,
     title: "Bike",
     routeName: "bike",
@@ -119,7 +119,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  stretch: {
     id: 3,
     title: "Stretch",
     routeName: "stretch",
@@ -156,7 +156,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  cardio: {
     id: 4,
     title: "Cardio",
     routeName: "cardio",
@@ -205,7 +205,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  store: {
     id: 5,
     title: "Store",
     routeName: "store",
@@ -248,6 +248,6 @@ const SHOP_DATA = [
       },
     ],
   },
-]
+}
 
 export default SHOP_DATA
