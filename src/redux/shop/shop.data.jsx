@@ -207,8 +207,8 @@ const SHOP_DATA = [
   },
   {
     id: 5,
-    title: "Shop",
-    routeName: "shop",
+    title: "Store",
+    routeName: "store",
     items: [
       {
         id: 30,
