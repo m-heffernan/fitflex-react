@@ -35,6 +35,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
       console.log("error creating user", error.message)
     }
   }
+
   return userRef
 }
 
@@ -43,6 +44,7 @@ export const addCollectionAndDocuments = async (
   objectsToAdd
 ) => {
   const collectionRef = firestore.collection(collectionKey)
+  console.log(collectionRef)
 
   const batch = firestore.batch()
   objectsToAdd.forEach(obj => {
@@ -56,7 +58,7 @@ export const addCollectionAndDocuments = async (
 firebase.initializeApp(config)
 
 export const convertCollectionsSnapshotToMap = collections => {
-  const transformedCollection = collections.doc.map(doc => {
+  const transformedCollection = collections.docs.map(doc => {
     const { title, items } = doc.data()
 
     return {
