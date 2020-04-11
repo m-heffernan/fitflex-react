@@ -1,36 +1,29 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: "circuit",
-      imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+      title: "Circuit",
+      imageUrl: "https://i.ibb.co/V3BktFc/undraw-personal-trainer-ote3.png",
       id: 1,
-      linkUrl: "shop/circuit",
+      linkUrl: "shop",
     },
     {
-      title: "bike",
-      imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+      title: "Bike",
+      imageUrl: "https://i.ibb.co/9Gkp5cG/undraw-indoor-bike-pwa4.png",
       id: 2,
-      linkUrl: "shop/bike",
-    },
-    {
-      title: "stretch",
-      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
-      id: 3,
-      linkUrl: "shop/stretch",
+      linkUrl: "shop",
     },
     {
       title: "cardio",
-      imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
-      size: "large",
-      id: 4,
-      linkUrl: "shop/cardio",
+      imageUrl: "https://i.ibb.co/pnVgFrW/undraw-fitness-stats-sht6.png",
+      id: 3,
+      linkUrl: "shop",
     },
     {
-      title: "store",
-      imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
+      title: "shop",
+      imageUrl: "https://i.ibb.co/4tm7rbv/undraw-add-to-cart-vkjp-1.png",
       size: "large",
       id: 5,
-      linkUrl: "shop/store",
+      linkUrl: "shop",
     },
   ],
 }

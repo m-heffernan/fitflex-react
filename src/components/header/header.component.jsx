@@ -19,6 +19,8 @@ const Header = ({ currentUser, hidden }) => (
   <HeaderContainer>
     <LogoContainer to="/">FITFLEX</LogoContainer>
     <OptionsContainer>
+      <OptionLink to="/instructors">INSTRUCTORS</OptionLink>
+      <OptionLink to="/videos">VIDEOS</OptionLink>
       <OptionLink to="/shop">SHOP</OptionLink>
       <OptionLink to="/contact">CONTACT</OptionLink>
       {currentUser ? (

@@ -2,8 +2,8 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { connect } from "react-redux"
 
-import CollectionsOverview from "../../components/collections-overview/collections-overview.component"
-import CollectionPage from "../shop-collection/collection.component"
+import VideoCollectionsOverview from "../../components/video-collections-overview/video-collections-overview.component"
+import VideoCollectionPage from "../video-collection/video-collection.component"
 
 import {
   firestore,
@@ -12,12 +12,12 @@ import {
 
 import { updateCollections } from "../../redux/shop/shop.actions"
 
-class ShopPage extends React.Component {
+class VideoPage extends React.Component {
   unsubscribeFromSnapshot = null
 
   componentDidMount() {
     const { updateCollections } = this.props
-    const collectionRef = firestore.collection("collections")
+    const collectionRef = firestore.collection("videos")
 
     this.unsubscribeFromSnapshot = collectionRef.onSnapshot(async snapshot => {
       const collectionsMap = convertCollectionsSnapshotToMap(snapshot)
@@ -31,10 +31,14 @@ class ShopPage extends React.Component {
 
     return (
       <div className="shop-page">
-        <Route exact path={`${match.path}`} component={CollectionsOverview} />
+        <Route
+          exact
+          path={`${match.path}`}
+          component={VideoCollectionsOverview}
+        />
         <Route
           path={`${match.path}/:collectionId`}
-          component={CollectionPage}
+          component={VideoCollectionPage}
         />
       </div>
     )
@@ -46,4 +50,4 @@ const mapDispatchToProps = dispatch => ({
     dispatch(updateCollections(collectionsMap)),
 })
 
-export default connect(null, mapDispatchToProps)(ShopPage)
+export default connect(null, mapDispatchToProps)(VideoPage)
