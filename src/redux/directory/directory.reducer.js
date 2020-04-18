@@ -4,19 +4,19 @@ const INITIAL_STATE = {
       title: "Circuit",
       imageUrl: "https://i.ibb.co/V3BktFc/undraw-personal-trainer-ote3.png",
       id: 1,
-      linkUrl: "shop",
+      linkUrl: "videos",
     },
     {
       title: "Bike",
       imageUrl: "https://i.ibb.co/9Gkp5cG/undraw-indoor-bike-pwa4.png",
       id: 2,
-      linkUrl: "shop",
+      linkUrl: "videos",
     },
     {
       title: "cardio",
       imageUrl: "https://i.ibb.co/pnVgFrW/undraw-fitness-stats-sht6.png",
       id: 3,
-      linkUrl: "shop",
+      linkUrl: "videos",
     },
     {
       title: "shop",
